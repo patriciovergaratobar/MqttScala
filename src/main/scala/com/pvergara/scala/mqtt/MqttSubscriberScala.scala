@@ -14,7 +14,7 @@ object MqttSubscriberScala {
     val persistence = new MemoryPersistence
     val clientMqtt = new MqttClient("tcp://localhost:1883", "SubscriptorEventScala", persistence)
     //Open Connection
-    clientMqtt.connect()
+    clientMqtt.connect
     //subscriber list topic
     clientMqtt.subscribe(topics)
     val callback = new MqttCallback {
