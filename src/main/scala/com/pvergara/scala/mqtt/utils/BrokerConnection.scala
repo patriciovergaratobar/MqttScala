@@ -7,7 +7,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence
 /**
   * Created by pvergara on 11-11-17.
   */
-object ConnectBroker {
+class BrokerConnection {
 
   def getMqttConection(broker: Broker) : MqttClient = {
     val persistence = new MemoryPersistence
