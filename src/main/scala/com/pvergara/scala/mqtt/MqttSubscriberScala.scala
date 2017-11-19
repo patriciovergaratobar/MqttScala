@@ -10,7 +10,7 @@ import org.eclipse.paho.client.mqttv3.{MqttClient, _}
 */
 object MqttSubscriberScala {
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
 
     val broker = new Broker("tcp://localhost:1883", "SubscriptorEventScala")
 
